@@ -1,30 +1,16 @@
-# Hangman
+# Mini-Games
 
-Code written for a traditional hangman game.
+This Code is written for several small games (I will keep adding :))
 
-## Function/code
+## Random Number Game
 
-### function
+- The main purpose of this small game is to create a program that randomly select a number in a range then the user has to guess the number. The User has four chances to guess the number if what he chose is correct then a message will print saying “you guessed right “ otherwise a negative message prints saying “you were wrong“
 
-- The game functions using the standard hangman rules. A word is presented with the '_' notation for each letter. The player is than expected to guess letters until they either 'die' due to using up their lifes or guess the word correctly. Currently the game provides for 5 lives and a selection  of 6 words. 
-
-### Code
-
-- The code makes use of object oriented programming and monitors the 'number of lives' and the 'number of letters' (see below). This monitoring is done to execute the game.
-
+- Please see below a short discription on a variable being used
 ```python
-"""for i in range (len(self.word)):
-            if new_letter.lower() in self.word[i]:
-                self.word_guessed[i] = new_letter
-     if new_letter.lower() in self.word:
-            print('correct!')
-            self.num_letters -= 1
-     else:
-            print('not in the word mate')
-            self.num_lives -= 1
-     pass"""
+"""
+for i in range(0,4):
+       #The i represents a temporary variable used to store the integer value of the current position in the range of the for loop that only has scope within its for loop
+"""
 ```
 
-### To improve
-
-- To make the game more user friendly I hope to add stickman sketches so that it is exactly like a hangman game on paper. 
